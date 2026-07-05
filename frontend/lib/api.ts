@@ -1,7 +1,7 @@
 import type { TriageFormInput, TriageResult, EsiLevel } from '@/types'
 import { computeDerivedFeatures, generateReasoningText, hashData } from '@/data/mock'
 
-const AI_API_URL = process.env.NEXT_PUBLIC_AI_API_URL || 'http://localhost:8000'
+const AI_API_URL = process.env.NEXT_PUBLIC_AI_API_URL || 'https://hackathon1-production-f306.up.railway.app'
 
 // ─── Real API: POST /predict ────────────────────────────
 async function callRealPredictApi(input: TriageFormInput): Promise<{

@@ -479,7 +479,8 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://vitas-three.vercel.app",   # Vercel production
+        "https://vitas-sage.vercel.app",   # Vercel production
+        "https://vitas-sage.vercel.app/",  # Vercel production with trailing slash
         "https://*.vercel.app",             # Vercel preview deployments
         "http://localhost:3000",            # Local development
         "http://127.0.0.1:3000",
